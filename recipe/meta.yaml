@@ -1,5 +1,5 @@
 {% set name = "pyflyde" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyflyde-{{ version }}.tar.gz
-  sha256: bc8e494a2993d0a176825439a8bf5a646bdd08ba5ad3fafbf0825294013255c3
+  sha256: da6e591d7fa54517d67d2368c596f1f9bd126f9d3d257bb57fa7d0f86e576911
 
 build:
   entry_points:
