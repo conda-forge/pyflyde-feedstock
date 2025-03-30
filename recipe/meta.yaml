@@ -1,5 +1,5 @@
 {% set name = "pyflyde" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyflyde-{{ version }}.tar.gz
-  sha256: dccee42415e9bbd3c3555d72cab67e6964adfaf1da0bf85f6d45a512e9b012da
+  sha256: 206ee5559970ea54f7499e6b4b25071809d67edceaa7ba0bfd1c0dc40444e989
 
 build:
   entry_points:
     - pyflyde = flyde.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
